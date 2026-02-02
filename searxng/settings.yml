@@ -1,0 +1,30 @@
+use_default_settings: true
+server:
+  # Secret key generated via openssl rand -hex 32
+  secret_key: "9d6a5ab9c3764e87813cb4e3c18c044aa8df9c1b50d6274123ac5e2cc4f1110d"
+  limiter: false
+  image_proxy: true
+  public_instance: true
+  bind_address: "0.0.0.0"
+  port: 8080
+
+ui:
+  static_use_hash: true
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  default_lang: ""
+  formats:
+    - html
+    - json
+
+engines:
+  - name: google
+    engine: google
+    shortcut: g
+    enabled: true
+  - name: bing
+    engine: bing
+    shortcut: b
+    enabled: true
